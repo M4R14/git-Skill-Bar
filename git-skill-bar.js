@@ -1,4 +1,3 @@
-
 	$.ajaxSetup({
 	    async: false
 	});
@@ -23,7 +22,7 @@
 			language = li.attributes.language.value;
 			presen = data_skill[language]*100/total_all;
 
-			progress = li.firstElementChild;
+			progress = li.getElementsByTagName('progress')[0];
 			progress.setAttribute("max",100);
 			progress.setAttribute("value",presen);
 		}    
